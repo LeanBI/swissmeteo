@@ -17,5 +17,7 @@ docker run \
 	-e S3_PORT=443 \
 	-e S3_ACCESS_KEY=mykey \
 	-e S3_SECRET_KEY=mypassword \
+	-e S3_BUCKET=mybucket \
+	-e S3_KEY=swissmeteo/data
 	yourBaseName:andTag
 ```
