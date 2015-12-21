@@ -9,7 +9,6 @@ import urllib2
 import os
 import json
 from dateutil import parser, tz
-import pytz
 import time
 import logging
 import sys
