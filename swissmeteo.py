@@ -5,7 +5,7 @@ Created on Dec 17, 2015
 
 @author: Sébastien Brennion
 '''
-import urllib2
+import urllib
 import os
 import json
 from dateutil import parser, tz
@@ -21,7 +21,7 @@ class swissmeteo():
     def request(self):
 
         while True :
-            response = urllib2.urlopen(self.url)
+            response = urllib.urlopen(self.url)
             response_string=response.read()
             response_json= json.loads(response_string)
             
